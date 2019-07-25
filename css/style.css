@@ -134,7 +134,8 @@ body{
 .add-to-do i{
     position: absolute;
     font-size: 40px;
-    color: #4162f6;
+		color: #4162f6;
+		cursor: pointer;
 }
 
 .add-to-do input{
