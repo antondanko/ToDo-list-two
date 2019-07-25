@@ -57,7 +57,8 @@ function addToDO(toDo, id, done, trash) {
 
 document.addEventListener('keyup', function(event){
 	if(event.keyCode === 13) {
-		const toDo = input.value;
+		let toDo = input.value.trim();
+		
 		if(toDo) {
 			addToDO(toDo, id, false, false);
 			LIST.push({
@@ -77,7 +78,8 @@ document.addEventListener('keyup', function(event){
 
 const buttonAdd = document.querySelector('.fa-plus-circle');
 buttonAdd.addEventListener('click', function(){
-		const toDo = input.value;
+		let toDo = input.value.trim();
+
 		if(toDo) {
 			addToDO(toDo, id, false, false);
 			LIST.push({
